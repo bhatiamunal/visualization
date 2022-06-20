@@ -1,0 +1,28 @@
+<style>
+  .ChartsIcon{
+    height: 10%;
+    border: solid 1px black;
+    border-radius: 100px;
+    margin: 1%;
+    text-align: center;
+  
+  }
+</style>
+
+<div class="row">
+  <div class="col-3">
+    <div class="row">
+      <div class="col-3 ChartsIcon" ng-repeat="x in chartList" ng-click="chartSelection(x.id)"> {{x.name}} </div>
+    </div>
+   
+  </div>
+  <div class="col-9">  
+    <figure class="highcharts-figure">
+      <div id="container">m1</div>
+      
+    </figure>
+  </div>
+</div>
+
+
+
