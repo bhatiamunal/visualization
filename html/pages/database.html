@@ -1,1 +1,19 @@
-<h1>database</h1>
+<!-- <input type="file" id="file1" name="file" multiple
+ng-files="getTheFiles($files)" /> -->
+
+<!-- <input type="button" ng-click="uploadFiles()" value="Upload" /> -->
+<input type="file" id="files" name="files" />
+<br/>
+<table class="table table-striped">
+    <tr>
+        <th ng-repeat="x in tableHeading">{{x}}</th>
+    </tr>
+    <tr>
+        <td  ng-repeat="x in tableHeading"> 
+            <div  ng-repeat="value  in tbldata">
+                {{value[x]}}
+            </div>
+            
+        </td>
+    </tr>
+</table>

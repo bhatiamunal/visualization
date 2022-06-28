@@ -5,7 +5,7 @@ app.controller("chartsCtrl", function ($scope) {
 		{ name:"Bar",imgae:"",id:3,chartName:"bar",type:"default" },
 		{ name:"column",imgae:"",id:4,chartName:"column",type:"default" },
 		{ name:"Pie",imgae:"",id:5,chartName:"pie",type:"pie" },
-		{ name:"Packedbubble",imgae:"",id:6,chartName:"packedbubble",type:"packedbubble" }
+		{ name:"Packed bubble",imgae:"",id:6,chartName:"packedbubble",type:"packedbubble" }
 	]
 	$scope.chartSelection = function(id) {
 		

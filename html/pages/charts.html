@@ -11,14 +11,61 @@
 
 <div class="row">
   <div class="col-3">
+
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            List of charts
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body"  style="text-align: center">
+            <div class="row" style="text-align: center">
+              <div class="col-4 ChartsIcon" ng-repeat="x in chartList" ng-click="chartSelection(x.id)"> {{x.name}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                customization
+           </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- 
     <div class="row">
       <div class="col-3 ChartsIcon" ng-repeat="x in chartList" ng-click="chartSelection(x.id)"> {{x.name}} </div>
     </div>
-   
+    -->
   </div>
   <div class="col-9">  
     <figure class="highcharts-figure">
-      <div id="container">m1</div>
+      <div id="container"></div>
       
     </figure>
   </div>

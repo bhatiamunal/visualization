@@ -5,7 +5,7 @@ var path		= require("path");
 
 
 var homeRoutes		= require("./routes/Home");
-// var userRoutes		= require("./routes/Users");
+var database		= require("./routes/database");
 // var orderRoutes		= require("./routes/Orders");
 // var productRoutes	= require("./routes/Products");
 // var settingRoutes	= require("./routes/Settings");
@@ -16,7 +16,7 @@ var homeRoutes		= require("./routes/Home");
 app.use(bodyParser.json());
 
 app.use('/home', homeRoutes);
-// app.use('/users', userRoutes);
+ app.use('/database', database);
 // app.use('/products', productRoutes);
 // app.use('/orders', orderRoutes);
 // app.use('/customers', customerRoutes);
