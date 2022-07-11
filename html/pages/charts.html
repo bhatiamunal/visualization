@@ -36,7 +36,9 @@
         </div>
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
           <div class="card-body">
-
+            <div class="row" style="text-align: center">
+              <div class="col-4 ChartsIcon" ng-repeat="selectedChartCustomization in selectedChart.customization" data-bs-toggle="modal" data-bs-target="#myModal" >     {{selectedChartCustomization}} </div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,6 +72,29 @@
     </figure>
   </div>
 </div>
+  
 
 
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

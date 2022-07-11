@@ -1,0 +1,14 @@
+<input type="text" ng-model="search">
+<table class="table table-striped">
+    <tr>
+        <th ng-repeat="x in tableHeading">{{x}}</th>
+    </tr>
+    <tr>
+        <td  ng-repeat="x in tableHeading "> 
+            <div  ng-repeat="value  in tbldata | filter:search">
+                {{value[x]}}
+            </div>
+            
+        </td>
+    </tr>
+</table> 
